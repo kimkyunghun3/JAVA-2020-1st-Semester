@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class RandomGame {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         System.out.println("Guess a magic number between 0 and 100");
         Scanner scanner = new Scanner(System.in);
         double randomValue = Math.random();
