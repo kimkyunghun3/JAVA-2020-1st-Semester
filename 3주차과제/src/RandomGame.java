@@ -19,5 +19,6 @@ public class RandomGame {
                 System.out.println("your guess is too low");
             }
         }
+        scanner.close();
     }
 }
