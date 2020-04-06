@@ -1,3 +1,13 @@
+/*
+ * 파일명 : FindPrimes.java
+ * 입력 : -
+ * 출력 : 각 줄의 10개씩 소수 50개 출력
+ * 작성일 : 2020년 4월 일
+ * 작성자 : 20176088 김경훈
+ *
+ * Q. 각 줄에 10개씩 소수 50개를 출력
+ */
+
 public class FindPrimes
 {
     public static boolean isPrime(int x)
