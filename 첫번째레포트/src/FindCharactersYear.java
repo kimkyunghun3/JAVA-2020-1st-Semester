@@ -13,14 +13,14 @@ import java.util.Scanner;
 
 public class FindCharactersYear {
     public static void main(String[] args) {
-        String[] tennumbers = {"신", "임", "계", "갑", "을", "병", "정", "무", "기", "경"};  //십간 십진수를 하나의 배열에 저장
-        String[] twelvenumbers = {"유", "술", "해", "자", "축", "인", "묘", "진", "사", "오", "미", "신"}; //12진수를 하나의 배열에 저장
+        String[] tennumbers = {"경","신", "임", "계", "갑", "을", "병", "정", "무", "기"};  //십간 십진수를 하나의 배열에 저장
+        String[] twelvenumbers = {"신","유", "술", "해", "자", "축", "인", "묘", "진", "사", "오", "미"}; //12진수를 하나의 배열에 저장
         Scanner scan = new Scanner(System.in);
         int nYear = 0;
         System.out.print("년도를 입력하시오> ");
         nYear = scan.nextInt(); //입력한 년도를 nYear 변수에 저장
         System.out.print(nYear + "년은 \"");
-        System.out.println(tennumbers[(nYear % 10) - 1] + twelvenumbers[(nYear % 12) - 1] + "\"년입니다"); //십진수와 12진수를 활용하여 공식 구현
+        System.out.println(tennumbers[(nYear % 10)] + twelvenumbers[(nYear % 12)] +'"'+"년입니다"); //십진수와 12진수를 활용하여 공식 구현
         scan.close();
     }
 }
