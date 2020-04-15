@@ -59,15 +59,15 @@ public class Calc {
         System.out.print("두 정수와 연산자를 입력하시오>> ");
         Scanner s = new Scanner(System.in);
 
-        int num1 = s.nextInt(); //피연산자1
-        String cal = s.next();  //연산자
-        int num2 = s.nextInt();  //피연산자2 입력
+        int num1 = s.nextInt();
+        String cal = s.next();
+        int num2 = s.nextInt();
 
-        if(cal.equals("+")) { //연산자가 덧셈일 때
+        if(cal.equals("+")) {
             Add temp = new Add();
 
             temp.setValue(num1, num2);
-            System.out.println(temp.calculate()); //덧셈 수행
+            System.out.println(temp.calculate());
         }
         else if(cal.equals("-")) {
             Sub temp = new Sub();
