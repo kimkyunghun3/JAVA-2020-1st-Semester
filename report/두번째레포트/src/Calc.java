@@ -1,7 +1,7 @@
 /*
  * 파일명 : Calc.java , Add.java
- * 입력 : -
- * 출력 : 연산에 따른 결과 출력
+ * 입력 : 예시대로 입력
+ * 출력 : 입력한 연산에 따른 결과 출력
  * 작성일 : 2020년 4월 21일
  * 작성자 : 20176088 김경훈
  *
@@ -25,26 +25,25 @@ public class Calc {
                 //객체 생성
                 temp.setValue(num1, num2);
                 System.out.println(temp.calculate()); //덧셈 수행
-            } else if (cal.equals("-")) {
+            } else if (cal.equals("-")) {   //연산자가 뺄셈일 때
                 Sub temp = new Sub();
 
                 temp.setValue(num1, num2);
                 System.out.println(temp.calculate());
-            } else if (cal.equals("*")) {
+            } else if (cal.equals("*")) {   //연산자가 곱셈일 때
                 Mul temp = new Mul();
 
                 temp.setValue(num1, num2);
                 System.out.println(temp.calculate());
-            } else if (cal.equals("/")) {
+            } else if (cal.equals("/")) {   //연산자가 나누기 일 때
                 Div temp = new Div();
-                if (num2 == 0)
+                if (num2 == 0)      //만약 0으로 나눌려고 한다면
                     System.out.println("0으로 나눌 수 없습니다.");
                 else {
                     temp.setValue(num1, num2);
                     System.out.println(temp.calculate());
                 }
-            } else if (cal.equals("%")) {
-                System.out.println("잘못된 연산자입니다.");
+            } else if (cal.equals("%")) {       //연산자가 지정된 연산자가 아닐 때                System.out.println("잘못된 연산자입니다.");
             }
 
 

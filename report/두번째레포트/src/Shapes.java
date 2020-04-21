@@ -17,7 +17,7 @@ interface Shape {           //Shape 인터페이스 구현
     }
 }
 
-class Circle implements Shape {
+class Circle implements Shape {     //Shape 인터페이스를 상속받아 사용
     private int radius;
 
     public Circle(int radius) {
