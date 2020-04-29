@@ -1,3 +1,8 @@
+/*	큐 자료구조에 generics 클래스를 선언하여
+ *      - String, Integer, Point 큐 함수 삽입
+ *      - 입력한 값을 push와 pop 이용하여 출력
+ */
+
 import java.util.*;
 
 class GQueue<T> {
@@ -11,7 +16,7 @@ class GQueue<T> {
         queue = new Object[10];
     }
 
-    public void push(T item) {
+    public void push(T item) {          //push 부분 구현
         if (tos == 20)
             return;
 
@@ -25,7 +30,7 @@ class GQueue<T> {
 
     }
 
-    public T pop() {
+    public T pop() {            //pop 부분 구현
         if (front == tos) //empty
             return null;
         front++;
@@ -35,7 +40,7 @@ class GQueue<T> {
     }
 }
 
-class Point {
+class Point {           //Point 큐 구현
     private Object x;
     private Object y;
 
