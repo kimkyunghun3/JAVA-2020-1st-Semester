@@ -1,3 +1,5 @@
+package Exam.Question2;
+
 public class RectangleEx {
     int x, y, width, height;
 
@@ -37,7 +39,7 @@ public class RectangleEx {
 
     public String toString() {      //객체를 문자열로 만들어 주는 부분
         return ("Rectangle(" + x + "," + y + ")");
-    }
+    }   //주소값이 아닌 문자열이 출력 되도록 선언
 
     public static void main(String[] args) {
         RectangleEx r1 = new RectangleEx();     //매개변수가 없는 r1 객체 생성

@@ -1,11 +1,13 @@
+package Exam.Question3;
+
 public class AddNumbers {
     public static void main(String[] args) {
         double Doublesum = 0;
         int Intsum = 0;
         double Doubletmp = 0;
-        int Inttmp = 0;
+        int Integertmp = 0;
         System.out.println("명령행 인자들을 출력합니다.");
-        for(String elem : args)
+        for (String elem : args)
             System.out.print(elem + ", ");      //명령형 인자들 모두 출력
         System.out.println();
         System.out.println();
@@ -15,15 +17,15 @@ public class AddNumbers {
         for (int i = 0; i < args.length; i++) {
 
             if (isInteger(args[i])) {       // 배열에서 Integer라면
-                Inttmp = Integer.parseInt(args[i]);
-                Intsum += Inttmp;       //Int 자료형 sum에 더한다
+                Integertmp = Integer.parseInt(args[i]);
+                Intsum += Integertmp;       //Int 자료형 sum에 더한다
 
             } else if (isDouble(args[i]) == true) {     //배열에서 Double라면
 
                 Doubletmp = Double.parseDouble(args[i]);
                 Doublesum += Doubletmp;
 
-            }else {
+            } else {
                 System.out.println(args[i] + ": 정수나 실수가 아닙니다.");
             }
 
