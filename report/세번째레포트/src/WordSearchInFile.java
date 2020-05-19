@@ -1,3 +1,14 @@
+/*
+ * 파일명 : WordSearchInFile.java
+ * 입력 : 파일명 입력 -> 단어나 문장 입력 -> (종료 원할시) exit? 입력
+ * 출력 : 입력한 파일에서 단어나 문장을 입력할 시 단어나 문장이 해당하는 문장과 그 라인 번호를 출력
+ * 작성일 : 2020년 5월 19일
+ * 작성자 : 20176088 김경훈
+ *
+ * Q. 입력 파일에서 단어나 문장을 검색하여 라인 번호와 그 문장을 출력하라.
+ */
+
+
 import java.io.*;
 import java.util.*;
 
@@ -17,7 +28,7 @@ public class WordSearchInFile {
             }
             fScanner.close();
 
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {     //예외처리 구현
             e.printStackTrace();
         }
     }
@@ -61,7 +72,7 @@ public class WordSearchInFile {
         System.out.println("프로그램을 종료합니다.");
     }
     public static void main(String[] args) {
-        WordSearchInFile ws = new WordSearchInFile();
+        WordSearchInFile ws = new WordSearchInFile();   //main에서 실행
         ws.run();
     }
 }
