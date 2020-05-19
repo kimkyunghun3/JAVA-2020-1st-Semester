@@ -41,7 +41,7 @@ public class BufferReader {
                 }
                 if (buf[i] == '.' || buf[i] == '!' || buf[i] == '?') //세가지 문자(.  ?  ! )로 끝나면 하나의 문장
                     stringcount++;
-                if (buf[i] == ' ')  //공백이 아닌 모든 문자
+                if (buf[i] == ' ' || buf[i] == '.')  //공백이 아닌 모든 문자
                     charcount--;
             }
 
