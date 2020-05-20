@@ -9,10 +9,12 @@
  */
 
 
+import WordSearchInterface.WordSearchInterface;
+
 import java.io.*;
 import java.util.*;
 
-public class WordSearchInFile {
+public class WordSearchInFile implements WordSearchInterface {
     private File targetFile = null;
     Vector<String> lineVector = new Vector<String>();
 
