@@ -13,7 +13,7 @@ public class GraphicsAndMouseDraggingFrame extends JFrame {
     }
 
     class MyPanel extends JPanel {
-        private ImageIcon icon = new ImageIcon("images/back.jpg");
+        private ImageIcon icon = new ImageIcon("/Users/eddy/Desktop/images.jpeg");
         private Image img = icon.getImage();
         private int ovalX=100, ovalY=100; // 원의 중심 좌표
         private final int RADIUS = 20; // 원의 반지름
