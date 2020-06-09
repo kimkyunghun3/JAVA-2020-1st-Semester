@@ -5,10 +5,10 @@ import java.awt.*;
 public class FigurePanelEx extends JFrame {
     public FigurePanelEx() {
         setTitle("FigurePanelEx");
-        setLayout(new GridLayout(2, 3, 5, 5));
+        setLayout(new GridLayout(2, 3, 5, 5)); //GridLayout사용하도록 설정
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 200);
-        this.add(new xPanel());
+        this.add(new xPanel());             //각 패널마다 add하도록 구현
         this.add(new blueRectanglePanel());
         this.add(new redRoundRectanglePanel());
         this.add(new blackOvalPanel());
@@ -17,7 +17,7 @@ public class FigurePanelEx extends JFrame {
         setVisible(true);
     }
 
-    class xPanel extends JPanel {
+    class xPanel extends JPanel {           //xpanel 설정
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
@@ -29,7 +29,7 @@ public class FigurePanelEx extends JFrame {
         }
     }
 
-    class blueRectanglePanel extends JPanel {
+    class blueRectanglePanel extends JPanel {       //blue 직사각형 구현
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
@@ -40,7 +40,7 @@ public class FigurePanelEx extends JFrame {
         }
     }
 
-    class redRoundRectanglePanel extends JPanel {
+    class redRoundRectanglePanel extends JPanel {       //레드 직사각형 구현
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
@@ -51,7 +51,7 @@ public class FigurePanelEx extends JFrame {
         }
     }
 
-    class blackOvalPanel extends JPanel {
+    class blackOvalPanel extends JPanel {       //검정 oval 구현
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
@@ -62,7 +62,7 @@ public class FigurePanelEx extends JFrame {
         }
     }
 
-    class blueFilledRectanglePanel extends JPanel {
+    class blueFilledRectanglePanel extends JPanel {     //블루색 꽉찬 직사각형 구현
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
@@ -74,7 +74,7 @@ public class FigurePanelEx extends JFrame {
         }
     }
 
-    class redFilledRoundRectanglePanel extends JPanel {
+    class redFilledRoundRectanglePanel extends JPanel {     //빨간색 꽉찬 직사각형 구현
         public void paintComponent(Graphics g) {
             super.paintComponent(g);
             int width = getSize().width;
