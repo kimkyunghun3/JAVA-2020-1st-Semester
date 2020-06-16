@@ -15,8 +15,8 @@ public class MoneyChangerWithCheck extends JFrame
 
     MoneyChangerWithCheck()
     {
-        setTitle("Money Changer");
-        setBackground(Color.PINK);
+        setTitle("Money Changer");          //타이틀명을 지정
+        setBackground(Color.PINK);          //배경화면 색깔을 핑크색으로 설정
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         cp = getContentPane();
         setLayout(null);
@@ -91,8 +91,8 @@ public class MoneyChangerWithCheck extends JFrame
     {
         public void itemStateChanged(ItemEvent e)
         {
-            if(e.getStateChange()==ItemEvent.SELECTED) bl = true;
-            else bl = false;
+            if(e.getStateChange()==ItemEvent.SELECTED) bl = true;        //체크박스가 체크된 경우
+            else bl = false;    //체크박스를 체크하지 않는 경우
 
             for(int i = 0; i < jcbl.length; i++)
             {

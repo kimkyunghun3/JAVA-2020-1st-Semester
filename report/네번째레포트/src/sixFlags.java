@@ -5,10 +5,10 @@ import java.awt.*;
 public class sixFlags extends JFrame{
 
     public sixFlags(){      //화면 구성 부분
-        setTitle("sixFlags");
-        setLayout(new GridLayout(2,3,5,5));
+        setTitle("sixFlags");       //Title명
+        setLayout(new GridLayout(2,3,5,5)); //가로3 세로2 기준으로 구분하여 Grid 설정
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.add(new USFlag());
+        this.add(new USFlag());     //각 패널을 add하여 grid에 적용하도록 한다.
         this.add(new CanadaFlag());
         this.add(new IndiaFlag());
         this.add(new UKFlag());
@@ -20,12 +20,12 @@ public class sixFlags extends JFrame{
 
     }
 
-    class USFlag extends JPanel {
+    class USFlag extends JPanel {       //US Flag 이미지를 추가하는 패널
         private ImageIcon icon = new ImageIcon("/Users/eddy/Desktop/us.gif"); //이미지 추가
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     class CanadaFlag extends JPanel {
@@ -33,7 +33,7 @@ public class sixFlags extends JFrame{
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     class IndiaFlag extends JPanel {
@@ -41,7 +41,7 @@ public class sixFlags extends JFrame{
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     class UKFlag extends JPanel {
@@ -49,7 +49,7 @@ public class sixFlags extends JFrame{
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     class ChinaFlag extends JPanel {
@@ -57,7 +57,7 @@ public class sixFlags extends JFrame{
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     class NorwayFlag extends JPanel {
@@ -65,7 +65,7 @@ public class sixFlags extends JFrame{
         private Image img = icon.getImage();
         public void paintComponent(Graphics g){
             super.paintComponent(g);
-            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //사이즈에 맞게 이미지 들어가도록 설정
+            g.drawImage(img, 0, 0,getWidth(),getHeight(),this); //패널에 꽉차게 이미지가 저장되도록 설정
         }
     }
     public static void main(String[] args){
