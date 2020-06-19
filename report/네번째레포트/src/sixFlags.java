@@ -82,3 +82,4 @@ public class sixFlags extends JFrame{
         new sixFlags();
     }
 }
+
