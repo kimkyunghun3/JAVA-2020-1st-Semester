@@ -18,11 +18,13 @@ public class SimpleFrame extends JFrame {
         viewMenu.addSeparator();
         viewMenu.add(new JMenuItem("쪽윤곽"));
         JMenu inputMenu = new JMenu("입력");
+        JMenu printMenu = new JMenu("인쇄");
         JMenuBar mb = new JMenuBar();
         mb.add(fileMenu);
         mb.add(editMenu);
         mb.add(viewMenu);
         mb.add(inputMenu);
+        mb.add(printMenu);
         setJMenuBar(mb);
     }
     static public void main(String[] arg) {

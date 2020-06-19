@@ -23,11 +23,11 @@ public class ToolBarEx extends JFrame {
         bar.addSeparator();
 
 
-        JButton printBtn = new JButton(new ImageIcon("images/print.jpg"));
+        JButton printBtn = new JButton(new ImageIcon("/Users/eddy/Desktop/print.gif"));
         printBtn.setToolTipText("Print");
         bar.add(printBtn);
 
-        JButton saveBtn = new JButton(new ImageIcon("images/save.jpg"));
+        JButton saveBtn = new JButton(new ImageIcon("/Users/eddy/Desktop/save.jpg"));
         saveBtn.setToolTipText("Save");
         bar.add(saveBtn);
 
@@ -44,6 +44,7 @@ public class ToolBarEx extends JFrame {
         bar.add(combo);
 
         contentPane.add(bar, BorderLayout.NORTH);
+        pack();
     }
 
     public static void main(String [] args) {

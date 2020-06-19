@@ -1,3 +1,13 @@
+/*
+ * 파일명 : sixFlags.java
+ * 입력 : -
+ * 출력 : 6개의 국기가 Grid를 통해 각 위치에 출력
+ * 작성일 : 2020년 6월 19일
+ * 작성자 : 20176088 김경훈
+ *
+ * Q. 여섯 국기를 Grid에 정확하 위치에 출력하라
+ */
+
 import javax.swing.*;
 import java.awt.*;
 
