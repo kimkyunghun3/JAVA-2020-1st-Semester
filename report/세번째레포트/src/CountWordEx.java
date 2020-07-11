@@ -20,13 +20,11 @@ import java.util.StringTokenizer;
 
 // 인터페이스 부분
 class CountWord implements CountWordInterface {
-
     // 단어 배열 생성
     public String[] makeWordArray() {
         String[] wordArr = new String[0];
         String getLine = "";
         FileReader f_r = null;
-
         try {
             f_r = new FileReader("/Users/eddy/Documents/JavaClass/input.txt");  //파일 읽기 경로 설정
 
@@ -52,10 +50,8 @@ class CountWord implements CountWordInterface {
 
     // 단어 배열 출력
     public void printWordArray(String[] wordArr) {
-
         System.out.println("단어들의 배열을 1줄에 7개의 단어씩 나열합니다.");
         System.out.println("**********************************************************************");
-
         int count = 0;
 
         for (int i = 0; i < wordArr.length; i++) {
@@ -86,7 +82,6 @@ class CountWord implements CountWordInterface {
             }
             System.out.println();
         }
-
         else {
             for (int i = 0; i < arr.length - 1; i++) {
                 if (c == Character.toLowerCase(arr[i].charAt(arr[i].length() - 1))) {
@@ -103,35 +98,25 @@ class CountWord implements CountWordInterface {
 public class CountWordEx {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
-
         CountWord count = new CountWord();
         String[] arr = count.makeWordArray();
         count.printWordArray(arr);
-
-
         System.out.println("특정 문자로 시작하거나 끝나는 단어를 검색합니다.");
         System.out.print("검색하려는 문자를 입력하시오. 종료하려면 'exit'을 입력하시오 >> ");
         String s = scanner.next();      //하나씩 읽는다
-
         while (!s.equals("exit")) {     //exit가 나올 때 까지 반복
-
             char c = s.charAt(0);
             boolean head;
-
             System.out.println("\n" + c + "로 시작하는 단어를 검색합니다.");
             head = true;        //true = c로 시작하는 단어를 의미
             int num = count.countCWord(c, head, arr);
             System.out.println(c + "로 시작하는 단어의 수는 " + num + " 입니다");
-
-
             System.out.println("\n" + c + "로 끝나는 단어를 검색합니다.");
             head = false;       //false = c로 끝나는 단어 의미
             int num2 = count.countCWord(c, head, arr);
             System.out.println(c + "로 끝나는 단어의 수는 " + num2 + " 입니다\n");
-
             System.out.println("특정 문자로 시작하거나 끝나는 단어를 검색합니다.");
             System.out.print("검색하려는 문자를 입력하시오. 종료하려면 'exit'을 입력하시오 >> ");
-
             s = scanner.next();
         }
         System.out.println("프로그램을 종료합니다.");
